@@ -1,0 +1,5 @@
+.img {
+  background-size: cover !important;
+  width: 100% !important;
+  /* background: url("/public/images/home.jpg") !important; */
+}
