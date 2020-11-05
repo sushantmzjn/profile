@@ -3,3 +3,6 @@
   width: 100% !important;
   /* background: url("/public/images/home.jpg") !important; */
 }
+.name {
+  color: white !important;
+}
