@@ -21,7 +21,7 @@ export default class Home extends React.Component {
                         </Button>
                     </Col>
                     <Col style={{ background: "rgb(48, 51, 50)" }} className="px-0">
-                        <Image src={Himg} fluid className="h-100"></Image>
+                        <Image src={Himg} fluid className="h-0"></Image>
                     </Col>
                 </Row>
             </Container>
