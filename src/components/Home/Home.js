@@ -11,7 +11,7 @@ export default class Home extends React.Component {
                 <Row>
                     <Col style={{ background: "rgb(48, 51, 50)" }} className="">
 
-                        <h5 class="text-uppercase name p-3 text-left">Hello!</h5>
+                        <h5 className="text-uppercase name p-3 text-left">Hello!</h5>
                         <p className="px-3 text-light"><span className="display-4">I'm</span><br />
                             <span className="text-warning display-4 ml-0 ">Sushant Maharjan</span></p>
                         <p className='px-3 display-4 text-light'>A Freelance Web Designer</p>
