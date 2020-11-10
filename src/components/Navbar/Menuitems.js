@@ -23,5 +23,16 @@ export const MenuItems = [
         title: 'Resume',
         url: '#',
         cName: 'nav-links'
+    },
+    {
+        title: 'My Project',
+        url: '#',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Contact',
+        url: '#',
+        cName: 'nav-links'
     }
+
 ]

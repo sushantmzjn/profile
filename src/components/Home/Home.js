@@ -7,9 +7,9 @@ import Himg from "../../images/h.jpg"
 export default class Home extends React.Component {
     render() {
         return (
-            <Container fluid >
-                <Row>
-                    <Col style={{ background: "rgb(48, 51, 50)" }} className="">
+            <Container className="p-0 m-0" fluid >
+                <Row className="m-0">
+                    <Col style={{ background: "rgb(48, 51, 50)" }} className="p-0">
 
                         <h5 className="text-uppercase name p-3 text-left">Hello!</h5>
                         <p className="px-3 text-light"><span className="display-4">I'm</span><br />
@@ -20,7 +20,7 @@ export default class Home extends React.Component {
                             Download CV
                         </Button>
                     </Col>
-                    <Col style={{ background: "rgb(48, 51, 50)" }} className="px-0">
+                    <Col style={{ background: "rgb(48, 51, 50)" }} className="p-0">
                         <Image src={Himg} fluid className="h-0"></Image>
                     </Col>
                 </Row>

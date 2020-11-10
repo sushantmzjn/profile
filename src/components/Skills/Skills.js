@@ -13,10 +13,10 @@ export default class Skills extends React.Component {
 
     render() {
         return (
-            <Container fluid style={{ background: "rgb(48, 51, 50)" }}>
-                <Row><h1 style={{ background: "rgb(48, 51, 50)" }} className="p-2 w-100 m-0 text-center text-warning">My Skills</h1></Row>
+            <Container fluid className="p-0" style={{ background: "rgb(48, 51, 50)" }}>
+                <h1 style={{ background: "rgb(48, 51, 50)" }} className="p-2 w-100 text-center text-warning">My Skills</h1>
 
-                <Row className="w-100">
+                <Row className="w-100 p-0 m-0">
                     <Col lg={1} ></Col>
                     <Col lg={5} md={5} sm={12} xs={12} style={{ background: "rgb(48, 51, 50)" }} className="p-4" >
                         <p className="text-light ">Photoshop</p>
@@ -28,7 +28,7 @@ export default class Skills extends React.Component {
                     </Col>
                     <Col lg={1} ></Col>
                 </Row>
-                <Row className="w-100">
+                <Row className="w-100 p-0 m-0">
                     <Col lg={1} ></Col>
                     <Col lg={5} md={5} sm={12} xs={12} style={{ background: "rgb(48, 51, 50)" }} className="p-4" >
                         <p className="text-light ">REACT</p>
@@ -40,7 +40,7 @@ export default class Skills extends React.Component {
                     </Col>
                     <Col lg={1} ></Col>
                 </Row>
-                <Row className="w-100">
+                <Row className="w-100 p-0 m-0">
                     <Col lg={1} ></Col>
                     <Col lg={5} md={5} sm={12} xs={12} style={{ background: "rgb(48, 51, 50)" }} className="p-4">
                         <p className="text-light ">Flutter</p>

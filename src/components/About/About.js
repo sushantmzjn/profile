@@ -38,9 +38,9 @@ data.map((info) => {
 export default class About extends React.Component {
     render() {
         return (
-            <Container className=" p-0" fluid >
-                <Row className="m-0 p-0"><h1 style={{ background: "rgb(48, 51, 50)" }} className="p-0 w-100 m-0 text-center text-warning">About Me</h1></Row>
-                <Container className=" text-light text-end p-5 " style={{ background: "rgb(48, 51, 50)" }} fluid>
+            <Container className="p-0" fluid >
+                <h1 style={{ background: "rgb(48, 51, 50)" }} className="p-0 m-0 w-100 text-center text-warning">About Me</h1>
+                <Container className="text-light text-end p-2 " style={{ background: "rgb(48, 51, 50)" }} fluid>
                     {aboutMe}
                 </Container>
             </Container >
