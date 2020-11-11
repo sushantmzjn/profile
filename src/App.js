@@ -7,7 +7,11 @@ import Skills from "./components/Skills/Skills";
 import About from "./components/About/About";
 import Resume from "./components/Resume/Resume";
 import MyProject from "./components/MyProject/Project";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons"
 import { far } from "@fortawesome/free-regular-svg-icons"
@@ -26,6 +30,8 @@ export default class App extends React.Component {
         <About />
         <Resume />
         <MyProject />
+        <Contact />
+        <Footer />
       </div>
     );
   }

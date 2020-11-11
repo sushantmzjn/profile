@@ -8,7 +8,7 @@ var myService = [];
 var key = 0;
 for (let index = 0; index < 6; index++) {
     myService.push(
-        <Col className="" lg={4}>
+        <Col className="" lg={4} key={key++}>
             <div className="grid">
                 <figure className="effect-oscar w-100 mx-0">
                     <img style={{ background: "black", height: "250px" }} className="w-50" />
