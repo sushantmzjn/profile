@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { MenuItems } from './Menuitems';
 import './Navbar.css';
+
 
 export default class Navbar extends React.Component {
 
@@ -11,19 +13,20 @@ export default class Navbar extends React.Component {
 
     render() {
         return (
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
+            <nav className="NavbarItems fixed-top" >
+                <h1 className="navbar-logo"><i className="fab fa-react">Sushant</i></h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
+
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                            <Link to={item.url} smooth="true">
+                                <li key={index} className={item.cName} >
                                     {item.title}
-                                </a>
-                            </li>
+                                </li>
+                            </Link>
                         )
                     })}
                 </ul>

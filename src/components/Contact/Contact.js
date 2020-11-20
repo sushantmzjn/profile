@@ -3,6 +3,7 @@ import React from 'react'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 
+
 var Contacts = [];
 var key = 0;
 var data = [
@@ -34,8 +35,8 @@ data.forEach((value) => {
 export default class Contact extends React.Component {
     render() {
         return (
-            <Container fluid style={{ background: "rgb(48, 51, 50)" }} className="text-center">
-                <h1 className="text-center text-warning p-1">Contact Me</h1>
+            <Container fluid style={{ background: "rgb(48, 51, 50)" }} className="text-center" id="contact">
+                <h1 className="text-center text-warning p-1" >Contact Me</h1>
                 <Row>
                     {Contacts}
                 </Row>

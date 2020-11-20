@@ -13,7 +13,7 @@ export default class Skills extends React.Component {
 
     render() {
         return (
-            <Container fluid className="p-0" style={{ background: "rgb(48, 51, 50)" }}>
+            <Container fluid className="p-0" style={{ background: "rgb(48, 51, 50)" }} id="skill">
                 <h1 style={{ background: "rgb(48, 51, 50)" }} className="p-2 w-100 text-center text-warning">My Skills</h1>
 
                 <Row className="w-100 p-0 m-0">

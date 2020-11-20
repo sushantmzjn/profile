@@ -31,7 +31,7 @@ for (let index = 0; index < 6; index++) {
 export default class Service extends React.Component {
     render() {
         return (
-            <Container className="text-center p-0 mx-auto" style={{ background: "rgb(48, 51, 50)" }} fluid >
+            <Container className="text-center p-0 mx-auto" style={{ background: "rgb(48, 51, 50)" }} fluid id="service">
                 <h1 className="w-100 p-1 m-0 text-center text-warning">Services</h1>
                 <Row className="px-5">
                     {myService}

@@ -40,3 +40,19 @@ body {
   transition: 0.5s;
   background-color: rgba(254, 188, 57, 0.8);
 }
+
+@media screen and (max-width: 768px) {
+  .texth {
+    font-size: 20px !important;
+  }
+  .namee {
+    font-size: 30px !important;
+    margin-top: -80px !important ;
+  }
+  .texth1 {
+    font-size: 40px !important;
+  }
+  .imgg {
+    height: 290px !important;
+  }
+}

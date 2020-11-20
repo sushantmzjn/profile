@@ -45,7 +45,7 @@ for (let index = 0; index < 3; index++) {
 export default class Project extends React.Component {
     render() {
         return (
-            <Container className="text-center p-0" style={{ background: "rgb(48, 51, 50)" }} fluid >
+            <Container className="text-center p-0" style={{ background: "rgb(48, 51, 50)" }} fluid id="myproject" >
                 <h1 style={{ background: "rgb(48, 51, 50)" }} className=" w-100 p-1 text-center text-warning">My Project</h1>
 
                 <Row className="mb-0 px-5">{myProject}</Row>

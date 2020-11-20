@@ -47,7 +47,7 @@ data.map((resm) => {
 export default class Resume extends React.Component {
     render() {
         return (
-            <Container className="text-center p-0" style={{ background: "rgb(48, 51, 50)" }} fluid >
+            <Container className="text-center p-0" style={{ background: "rgb(48, 51, 50)" }} fluid id="resume">
                 <h1 style={{ background: "rgb(48, 51, 50)" }} className=" w-100 p-2 text-center text-warning">Resume</h1>
 
                 <Row className="px-5">
