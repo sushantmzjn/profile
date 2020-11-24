@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Dashboard from "./components/admin/dashboard/Dashboard"
 import Admin_Login from "./components/admin/Admin_login/Login"
+import Admin_Signup from "./components/admin/Admin_login/signup"
 import Home from "./components/Home/Home";
 import Servicew from "./components/Service1/Services";
 import Skills from "./components/Skills/Skills";
@@ -24,6 +25,7 @@ library.add(fas, far);
 
 
 export default class App extends React.Component {
+
   render() {
     return (
       <div className="m-0 overflow-hidden">
@@ -41,8 +43,21 @@ export default class App extends React.Component {
           </Route>
 
           <Switch>
-            <Route path="/adminlogin" exact component={Admin_Login} />
-            <Route path="/admindashboard" exact component={Dashboard} />
+            <Route path="/adminlogin" exact
+              render={(props) => (
+                <Admin_Login {...props} />
+              )}
+            />
+
+            <Route path="/adminsignup" exact
+              render={(props) => (
+                <Admin_Signup {...props} />
+              )} />
+
+            <Route path="/admindashboard" exact
+              render={(props) => (
+                <Dashboard {...props} />
+              )} />
           </Switch>
         </Router>
 
