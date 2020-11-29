@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Dashboard from "./components/admin/dashboard/Dashboard"
-import Admin_Login from "./components/admin/Admin_login/Login"
-import Admin_Signup from "./components/admin/Admin_login/signup"
+import Adminlogin from "./components/admin/Admin_login/Login"
+import Adminsignup from "./components/admin/Admin_login/signup"
 import Home from "./components/Home/Home";
 import Servicew from "./components/Service1/Services";
 import Skills from "./components/Skills/Skills";
@@ -45,13 +45,13 @@ export default class App extends React.Component {
           <Switch>
             <Route path="/adminlogin" exact
               render={(props) => (
-                <Admin_Login {...props} />
+                <Adminlogin {...props} />
               )}
             />
 
             <Route path="/adminsignup" exact
               render={(props) => (
-                <Admin_Signup {...props} />
+                <Adminsignup {...props} />
               )} />
 
             <Route path="/admindashboard" exact
