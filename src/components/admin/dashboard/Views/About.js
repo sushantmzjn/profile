@@ -21,7 +21,7 @@ export default class About extends Component {
                     <DateField source="DOB" />
                     <TextField source="address" />
                     <TextField source="email" />
-                    <EditButton basePath='/about' />
+                    {/* <EditButton basePath='/about' /> */}
                 </Datagrid>
             </List>
 
