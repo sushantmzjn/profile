@@ -1,33 +1,28 @@
-import React, { Component } from 'react'
-import { Button, Container, Table } from 'react-bootstrap'
-
-import { Datagrid, DateField, EditButton, List, TextField } from 'react-admin'
+import React from 'react'
+import { Datagrid, DateField, DeleteButton, EditButton, List, TextField } from 'react-admin'
 
 
 
-
-
-
-export default class About extends Component {
-
+class About extends React.Component {
 
     render() {
-        return (
+        const {
+            props,
+        } = this;
 
-            <List {...this.props}>
-                <Datagrid>
-                    {/* <TextField source="_id" /> */}
-                    <TextField source="fullname" />
-                    <DateField source="DOB" />
-                    <TextField source="address" />
-                    <TextField source="email" />
-                    {/* <EditButton basePath='/about' /> */}
-                </Datagrid>
-            </List>
+        return <List {...props}>
+            <Datagrid>
+                <TextField source='fullname' />
+                <DateField source='DOB' />
+                <TextField source='address' />
+                <TextField source='email' />
+                <TextField source='contact' />
+                <DeleteButton basePath="/about" />
+                <EditButton basePath="/about" />
+            </Datagrid>
 
-
-
-
-        )
+        </List>
     }
 }
+
+export default About
