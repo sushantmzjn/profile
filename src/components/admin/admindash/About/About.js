@@ -29,7 +29,7 @@ export default function About() {
                 }
 
             }).catch(err => { console.log(err); })
-    })
+    }, [])
 
     function fullnameHandler(e) {
         setfullname(e.target.value)

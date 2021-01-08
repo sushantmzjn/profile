@@ -59,20 +59,20 @@ export default function Contact() {
     useEffect(() => {
         Axios.get("http://localhost:8080/contact")
             .then((response) => {
-                if (!contactId) {
-                    console.log(response.data[0]);
 
-                    setcontactId(response.data[0]._id)
-                    setContact(response.data[0].contact)
-                    setAddress(response.data[0].address)
-                    setEmail(response.data[0].email)
-                    setWebsite(response.data[0].site)
-                }
+                console.log(response.data[0]);
+
+                setcontactId(response.data[0]._id)
+                setContact(response.data[0].contact)
+                setAddress(response.data[0].address)
+                setEmail(response.data[0].email)
+                setWebsite(response.data[0].site)
+
 
             }).catch(err => {
                 console.log(err);
             })
-    })
+    }, [])
 
 
     return (
